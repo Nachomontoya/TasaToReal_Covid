@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coviđ</title>
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;500&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="">
+        <div id="menu"></div>
+    </header>
+    <div id="white-content" class="hidden">
+        <p class="credits">Aquí van los créditos de la aplicación.</p>
+        <p class="credits" style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis massa ornare purus auctor vehicula in ut nunc. Integer viverra dui vitae aliquet placerat. Mauris non bibendum arcu. Mauris porta semper ligula at mattis. Integer ornare sed dui sit amet tristique. Etiam dictum auctor facilisis. Fusce pulvinar ante diam, at molestie risus vehicula ac.</p>
+    </div>
+    <main>
+        <div class="textContent">
+            <h1>Hola</h1>
+            <p>Calcula el número real de contagiados de cualquier municipio, según la tasa de incidencia por cada 100.000 habitantes.</p>
+            <div id="result-container" class="result">
+                <h2 id="result"></h2>
+            </div>
+        </div>
+        <form id="calculateRealContagious">
+            <input type="number" step=".01" name="infectedPer100" id="infectedPer100" placeholder="Tasa / 100.000hab.">
+            <select id="population" name="province" id="province">
+                <option disabled selected value="disabled">Elige una ciudad</option>
+            </select>
+            <input type="submit" value="Calcular">
+        </form>
+        
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
